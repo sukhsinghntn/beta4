@@ -1,0 +1,44 @@
+.sort-control {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid var(--bs-border-color, #ced4da);
+    border-radius: 0.375rem;
+    overflow: hidden;
+    background-color: var(--bs-body-bg, #ffffff);
+}
+
+.sort-control-btn {
+    border: none;
+    background: transparent;
+    padding: 0.15rem 0.35rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--bs-secondary-color, #6c757d);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.sort-control-btn + .sort-control-btn {
+    border-top: 1px solid var(--bs-border-color, #ced4da);
+}
+
+.sort-control-btn:hover,
+.sort-control-btn:focus {
+    background-color: var(--bs-secondary-bg-subtle, rgba(108, 117, 125, 0.12));
+    color: var(--bs-body-color, #212529);
+}
+
+.sort-control-btn:active {
+    background-color: var(--bs-secondary-bg, rgba(108, 117, 125, 0.2));
+}
+
+.sort-control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sort-control .material-icons {
+    font-size: 16px;
+}
