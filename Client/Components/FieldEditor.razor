@@ -61,9 +61,9 @@
                 {
                     <div class="d-flex align-items-center mb-1">
                         <input class="form-control flex-grow-1" @bind="Field.OptionItems[index]" />
-                        <div class="btn-group btn-group-sm ms-1">
-                            <button class="btn btn-outline-secondary p-1" @onclick="() => MoveOptionUp(index)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_upward</span></button>
-                            <button class="btn btn-outline-secondary p-1" @onclick="() => MoveOptionDown(index)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_downward</span></button>
+                        <div class="sort-control ms-1">
+                            <button type="button" class="sort-control-btn" @onclick="() => MoveOptionUp(index)"><span class="material-icons">arrow_upward</span></button>
+                            <button type="button" class="sort-control-btn" @onclick="() => MoveOptionDown(index)"><span class="material-icons">arrow_downward</span></button>
                         </div>
                         <button class="btn btn-outline-danger btn-sm p-1 ms-1" @onclick="() => Field.OptionItems.RemoveAt(index)"><span class="material-icons" style="font-size:16px;line-height:1">delete</span></button>
                     </div>
@@ -83,9 +83,9 @@
                     {
                         <div class="d-flex align-items-center mb-1">
                             <input class="form-control flex-grow-1" @bind="Field.GridColumns[idx]" />
-                            <div class="btn-group btn-group-sm ms-1">
-                                <button class="btn btn-outline-secondary p-1" @onclick="() => MoveColumnUp(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_upward</span></button>
-                                <button class="btn btn-outline-secondary p-1" @onclick="() => MoveColumnDown(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_downward</span></button>
+                            <div class="sort-control ms-1">
+                                <button type="button" class="sort-control-btn" @onclick="() => MoveColumnUp(idx)"><span class="material-icons">arrow_upward</span></button>
+                                <button type="button" class="sort-control-btn" @onclick="() => MoveColumnDown(idx)"><span class="material-icons">arrow_downward</span></button>
                             </div>
                             <button class="btn btn-outline-danger btn-sm p-1 ms-1" @onclick="() => Field.GridColumns.RemoveAt(idx)"><span class="material-icons" style="font-size:16px;line-height:1">delete</span></button>
                         </div>
@@ -107,9 +107,9 @@
                         {
                             <div class="d-flex align-items-center mb-1">
                                 <input class="form-control flex-grow-1" @bind="Field.GridRows[idx]" />
-                                <div class="btn-group btn-group-sm ms-1">
-                                    <button class="btn btn-outline-secondary p-1" @onclick="() => MoveRowUp(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_upward</span></button>
-                                    <button class="btn btn-outline-secondary p-1" @onclick="() => MoveRowDown(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_downward</span></button>
+                                <div class="sort-control ms-1">
+                                    <button type="button" class="sort-control-btn" @onclick="() => MoveRowUp(idx)"><span class="material-icons">arrow_upward</span></button>
+                                    <button type="button" class="sort-control-btn" @onclick="() => MoveRowDown(idx)"><span class="material-icons">arrow_downward</span></button>
                                 </div>
                                 <button class="btn btn-outline-danger btn-sm p-1 ms-1" @onclick="() => Field.GridRows.RemoveAt(idx)"><span class="material-icons" style="font-size:16px;line-height:1">delete</span></button>
                             </div>
@@ -127,9 +127,9 @@
                         {
                             <div class="d-flex align-items-center mb-1">
                                 <input class="form-control flex-grow-1" @bind="Field.GridColumns[idx]" />
-                                <div class="btn-group btn-group-sm ms-1">
-                                    <button class="btn btn-outline-secondary p-1" @onclick="() => MoveColumnUp(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_upward</span></button>
-                                    <button class="btn btn-outline-secondary p-1" @onclick="() => MoveColumnDown(idx)"><span class="material-icons" style="font-size:16px;line-height:1">arrow_downward</span></button>
+                                <div class="sort-control ms-1">
+                                    <button type="button" class="sort-control-btn" @onclick="() => MoveColumnUp(idx)"><span class="material-icons">arrow_upward</span></button>
+                                    <button type="button" class="sort-control-btn" @onclick="() => MoveColumnDown(idx)"><span class="material-icons">arrow_downward</span></button>
                                 </div>
                                 <button class="btn btn-outline-danger btn-sm p-1 ms-1" @onclick="() => Field.GridColumns.RemoveAt(idx)"><span class="material-icons" style="font-size:16px;line-height:1">delete</span></button>
                             </div>
